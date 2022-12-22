@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form(action='/new', method='POST')
+    .form-item 
+      label(for='name') Name: 
+      input#name.form-control(type='name', placeholder='name' name='name')
+    .form-item 
+      label(for='message') Message: 
+      input#message.form-control(type='text', placeholder='message' name='message' maxLength=100)
+    button.submit(type='submit', name='sub-mes') Submit
+    button.close(type='button') Close

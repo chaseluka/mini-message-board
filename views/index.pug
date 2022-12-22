@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= "poop"
+  p Welcome to #{title}
+  each mes in messages 
+    div= mes.text
+    div= mes.user
+    div= mes.added
